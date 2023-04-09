@@ -1,0 +1,646 @@
+/*--------Zeroing out---------*/
+
+html {
+	box-sizing: border-box;
+}
+
+body{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1,h2,h3,p{
+  margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*-----------------Header-------------------*/
+
+.header {
+    margin-bottom: 70px;
+}
+
+.header .container{
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 57px;
+}
+
+.header-up-item:not(.phone, .pers-ac){
+    margin-right: 40px;
+}
+
+.phone{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.acc{
+    background-image: url('/img/arrowheader.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 29px;
+}
+
+.pers-ac{
+    position: absolute;
+    right: 0;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+}
+
+.header-down{
+    position: relative;
+    display: flex;
+}
+
+.header-nav-bar{
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    height: 70px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.nav-bar{
+    padding-left: 45px;
+}
+
+.nav-link{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.nav-link:not(:last-child){
+    margin-right: 45px;
+}
+
+.nav-button{
+    position: absolute;
+    right: 0;
+    padding-right: 45px;
+}
+
+.button-link{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    width: 107px;
+    height: 42px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    padding: 13px 20px 13px 20px;
+}
+
+.button-link:not(:last-child){
+    margin-right: 40px;
+}
+
+/*----------------Offer------------------*/
+
+.offer{
+    margin-bottom: 70px;
+}
+
+.offer .container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.offer-title{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.offer-list{
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    max-height: 540px;
+}
+
+.title-card{
+    margin-bottom: 15px;
+}
+
+.title-card:not(.title-two){
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.title-two{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.price-card{
+    margin-bottom: 47px;
+}
+
+.price-card:not(.price-two){
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.price-two{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.more{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFCC66;
+
+    background-image: url('/img/arrowy.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 17px;
+}
+
+.one, .three{
+    padding: 40px;
+    background-repeat: no-repeat ;
+    border-radius: 15px;
+}
+
+.two{
+    padding: 212px 234px 148px 45px;
+}
+
+.offer-card.one{
+    width: 573px;
+    height: 258px;
+    background-image: url(/img/offer-1.png);
+    margin-right: 24px;
+}
+
+.offer-card.two{
+    width: 573px;
+    height: 540px !important;
+    background-image: url(/img/offer-2.png);
+}
+
+.offer-card.three{
+    width: 573px;
+    height: 258px;
+    background-image: url(/img/offer-3.png);
+    margin-top: 24px;
+}
+
+/*------------AboutUs-------------*/
+
+.about-us{
+    margin-bottom: 70px;
+}
+
+.about-us .container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.about-us-title{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+}
+
+.about-us-descr{
+    width: 888px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+/*-------------Services-------------------*/
+
+.services{
+    margin-bottom: 45px;
+}
+
+.services .container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.services-title{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.services-list{
+    font-size: 0;
+}
+
+.services-item{
+    display: inline-block;
+    width: 573px;
+    height: 330px;
+    padding-left: 45px;
+}
+
+.services-item:not(.item-two, .item-four){
+    margin-right: 24px;
+    margin-bottom: 24px;
+}  
+
+.services-link{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+
+    background-image: url('/img/arrowy.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 17px;
+}
+
+.services-descr{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+
+}
+
+.item-one{
+    background-image: url("/img/ser-1.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 191px;
+}
+
+.item-two{
+    background-image: url("/img/ser-2.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 191px;
+}
+
+.item-three{
+    background-image: url("/img/ser-3.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 191px;
+}
+
+.item-four{
+    background-image: url("/img/ser-4.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 191px;
+}
+
+/*-----------Advantages----------*/
+
+.advantages{
+    margin-bottom: 70px;
+}
+
+.advantages .container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.advantages-title{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+}
+
+.advantages-list{
+    font-size: 0;
+    display: grid;
+      grid-template-columns: repeat(4, 276px);
+      grid-template-rows: repeat(2, 276px);
+      gap: 22px;
+}
+
+.advantages-item{
+    display: inline-block;
+    width: 276px;
+    height: 276px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top 40px left 45px;
+    background-color: white;
+    padding-top: 116px;
+    padding-left: 45px;
+}
+
+.adv-q{
+    background-image: url('/img/adq.svg');
+}
+
+.adv-w{
+    background-image: url('/img/hanger.svg');
+}
+
+.adv-e{
+    background-image: url('/img/ade.svg');
+}
+
+.adv-r{
+    background-image: url('/img/adr.svg');
+}
+
+.adv-t{
+    background-image: url('/img/adt.svg');
+}
+
+.adv-y{
+    background-image: url('/img/ady.svg');
+}
+
+.adv-u{
+    background-image: url('/img/adu.svg');
+}
+
+.adv-i{
+    background-image: url('/img/adi.svg');
+}
+
+/*  Try Hard(Я мозг сломал пока делал xD)   */
+
+.placement{
+    margin-bottom: 70px;
+}
+
+.placement .container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.placement-title{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.grid-container-card{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-pos:not(.pos-o){
+    width: 374px;
+    height: 440px;
+    background-repeat: no-repeat;
+    padding-top: 249px;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-item{
+    margin-left: 45px;
+}
+
+.card-price-star{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+.place-title-card{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.discr-card{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+    margin-bottom: 33px;
+}
+
+.card-link{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+
+    padding: 13px 20px 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+}
+
+.pos-o{
+    width: 374px;
+    height: 440px;
+    padding-top: 373px;
+}
+
+.card-link-last{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+
+    background-image: url('/img/arroww.svg ');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 17px;
+}
+
+.price{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.night{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-right: 52px;
+}
+
+.card-span{
+    margin-right: 4px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+}
+
+.star:not(:last-child){
+    padding: 0;
+    margin: 0;
+    margin-right: 6px;
+}
+
+.pos-q{
+    background-image: url('/img/place-1.png');
+}
+.pos-w{
+    background-image: url('/img/place-2.png');
+}
+.pos-e{
+    background-image: url('/img/place-3.png');
+}
+.pos-r{
+    background-image: url('/img/place-4.png');
+}
+.pos-t{
+    background-image: url('/img/place-5.png');
+}
+.pos-y{
+    background-image: url('/img/place-6.png');
+}
+.pos-u{
+    background-image: url('/img/place-7.png');
+}
+.pos-i{
+    background-image: url('/img/place-8.png');
+}
+.pos-o{
+    background-image: url('/img/place-9.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
